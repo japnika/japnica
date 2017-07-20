@@ -4,6 +4,7 @@
 import {Component} from '@angular/core';
 import {Student} from "./student.model";
 import {StudentService} from "./student.service";
+import {Router} from "@angular/router";
 @Component({
   selector : 'student-post',
   templateUrl: './student.component.html'
@@ -11,17 +12,17 @@ import {StudentService} from "./student.service";
 export class StudentComponent {
   student: Student;
   constructor(
-    private studentService: StudentService
+    private studentService: StudentService,
+    private router: Router
   ) {
     this.student= new Student();
   }
   save(){
-    console.log(this.student);
     this.studentService.save(this.student).subscribe(response => this.onSaveSuccess(response), () => this.onSaveError());
   }
 
   private onSaveSuccess(result){
-    console.log("success");
+    this.router.navigate(['display-student']);
   }
 
   private onSaveError(){

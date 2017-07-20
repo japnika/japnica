@@ -45,7 +45,6 @@ export class EditStudentComponent implements OnInit, OnDestroy{
   }
 
   onSuccess(result) {
-    console.log("success");
     this.router.navigate(['display-student']);
   }
 

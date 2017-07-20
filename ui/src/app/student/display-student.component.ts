@@ -30,9 +30,7 @@ export class DisplayStudentComponent implements OnInit{
   }
 
   private onSuccess(data){
-    console.log("success display student info");
     this.students = data;
-    console.log(this.students);
   }
 
   private onError(error){

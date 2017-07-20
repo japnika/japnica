@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a2dd90d9-7b81-4376-b6d7-76108ca38436" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/main/java/com/example/server/ServerApplication.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/server/ServerApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/main/java/com/example/server/controller/StudentController.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/server/controller/StudentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/main/java/com/example/server/repository/StudentRepository.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/server/repository/StudentRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/main/java/com/example/server/service/serviceImpl/StudentServiceImpl.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/server/service/serviceImpl/StudentServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/main/java/com/example/server/service/serviceInterface/StudentService.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/example/server/service/serviceInterface/StudentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/src/main/resources/config/application.yml" afterPath="$PROJECT_DIR$/server/src/main/resources/config/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/.angular-cli.json" afterPath="$PROJECT_DIR$/ui/.angular-cli.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/package.json" afterPath="$PROJECT_DIR$/ui/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/app/app.module.ts" afterPath="$PROJECT_DIR$/ui/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/app/app.routing.ts" afterPath="$PROJECT_DIR$/ui/src/app/app.routing.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/app/student/student.service.ts" afterPath="$PROJECT_DIR$/ui/src/app/student/student.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/app/student/display-student.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/student/display-student.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/app/student/edit-student.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/student/edit-student.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/app/student/student.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/student/student.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-student.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="edit-student.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/src/app/student/edit-student.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+              <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
               <folding>
                 <element signature="e#44#103#0" expanded="true" />
               </folding>
@@ -58,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="student.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ui/src/app/student/student.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state relative-caret-position="323">
+              <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -95,8 +87,8 @@
       <file leaf-file-name="display-student.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/src/app/student/display-student.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="612">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="e#44#92#0" expanded="true" />
               </folding>
@@ -182,7 +174,6 @@
         <option value="$PROJECT_DIR$/ui/tslint.json" />
         <option value="$PROJECT_DIR$/ui/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/ui/src/app/student/student.component.html" />
-        <option value="$PROJECT_DIR$/ui/src/app/student/student.component.ts" />
         <option value="$PROJECT_DIR$/server/src/main/resources/config/application.yml" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/example/server/service/serviceInterface/StudentService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/example/server/repository/StudentRepository.java" />
@@ -191,7 +182,6 @@
         <option value="$PROJECT_DIR$/ui/src/app/student/delete-student.component.html" />
         <option value="$PROJECT_DIR$/ui/src/app/student/student-modal.service.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/student/delete-student.component.ts" />
-        <option value="$PROJECT_DIR$/ui/src/app/student/display-student.component.ts" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/example/server/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/com/example/server/ServerApplication.java" />
         <option value="$PROJECT_DIR$/ui/src/app/student/detail-career.component.ts" />
@@ -201,7 +191,9 @@
         <option value="$PROJECT_DIR$/ui/src/app/student/display-student.component.html" />
         <option value="$PROJECT_DIR$/ui/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/app.routing.ts" />
+        <option value="$PROJECT_DIR$/ui/src/app/student/display-student.component.ts" />
         <option value="$PROJECT_DIR$/ui/src/app/student/edit-student.component.ts" />
+        <option value="$PROJECT_DIR$/ui/src/app/student/student.component.ts" />
       </list>
     </option>
   </component>
@@ -779,15 +771,16 @@
       <workItem from="1500367677950" duration="262000" />
       <workItem from="1500444973242" duration="1256000" />
       <workItem from="1500449553462" duration="590000" />
-      <workItem from="1500534037248" duration="10617000" />
+      <workItem from="1500534037248" duration="12529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73597000" />
+    <option name="totallyTimeSpent" value="75509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -809,7 +802,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.626409" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.626409" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1185,16 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/student/display-student.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding>
-            <element signature="e#44#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/app/student/detail-student.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1207,14 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
           <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/app/student/student.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1257,13 +1232,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/student/display-student.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/app/student/edit-student.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
           <folding>
             <element signature="e#44#103#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/app/student/student.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="46" lean-forward="false" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
