@@ -1,0 +1,56 @@
+<div>
+  <h2 class="text-center">Display Student Information</h2>
+
+  <div class="table-responsive" *ngIf="students">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+      </thead>
+
+      <tbody *ngIf="students">
+      <tr *ngFor="let student of students">
+        <td>{{student.id}}</td>
+        <td>{{student.firstName}}</td>
+        <td>{{student.middleName}}</td>
+        <td>{{student.lastName}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.gender}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.phone}}</td>
+        <td></td>
+        <td class="text-right">
+          <div class="btn-group flex-btn-group-container">
+            <button type="submit"
+                    [routerLink] = "['../student', student.id]"
+                    class="btn btn-info btn-sm">
+              <span class="fa fa-eye"></span>
+              <span class="hidden-md-down">View</span>
+            </button>
+            <button type="submit"
+                    [routerLink] = "['../student/edit', student.id]"
+                    class="btn btn-primary btn-sm">
+              <span class="fa fa-pencil"></span>
+              <span class="hidden-md-down">Edit</span>
+            </button>
+            <button type="submit"
+                    (click) = "delete(student.id)"
+                    class="btn btn-danger btn-sm">
+              <span class="fa fa-remove"></span>
+              <span class="hidden-md-down">Delete</span>
+            </button>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
