@@ -8,11 +8,18 @@ import {RouterModule} from "@angular/router";
 import {routing} from "./app.routing";
 import {StudentService} from "./student/student.service";
 import {HttpModule} from "@angular/http";
+import {DisplayStudentComponent} from "./student/display-student.component";
+import {StudentModalService} from "./student/student-modal.service";
+import {StudentDetailComponent} from "./student/detail-student.component";
+import {EditStudentComponent} from "./student/edit-student.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentComponent
+    StudentComponent,
+    DisplayStudentComponent,
+    StudentDetailComponent,
+    EditStudentComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +29,8 @@ import {HttpModule} from "@angular/http";
     HttpModule
   ],
   providers: [
-    StudentService
+    StudentService,
+    StudentModalService
   ],
   bootstrap: [AppComponent]
 })
