@@ -5,6 +5,7 @@ import {ModuleWithProviders} from "@angular/core";
 import {DisplayStudentComponent} from "./student/display-student.component";
 import {StudentDetailComponent} from "./student/detail-student.component";
 import {EditStudentComponent} from "./student/edit-student.component";
+import {RegisterComponent} from "./register/register.component";
 /**
  * Created by japnica on 6/23/2017.
  */
@@ -28,6 +29,10 @@ export const testRoute : Routes = [
   {
     path : 'student/edit/:id',
     component: EditStudentComponent
+  },
+  {
+    path : 'register',
+    component: RegisterComponent
   }
 ];
 
