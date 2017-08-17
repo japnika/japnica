@@ -13,6 +13,8 @@ import {StudentDetailComponent} from "./student/detail-student.component";
 import {EditStudentComponent} from "./student/edit-student.component";
 import {RegisterComponent} from "./register/register.component";
 import {RegisterService} from "./register/register.service";
+import {LoginDialogComponent} from "./login/login.component";
+import {Login} from "./login/login.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import {RegisterService} from "./register/register.service";
     DisplayStudentComponent,
     StudentDetailComponent,
     EditStudentComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import {RegisterService} from "./register/register.service";
   ],
   providers: [
     StudentService,
-    RegisterService
+    RegisterService,
+    Login
   ],
   bootstrap: [AppComponent]
 })

@@ -6,6 +6,7 @@ import {DisplayStudentComponent} from "./student/display-student.component";
 import {StudentDetailComponent} from "./student/detail-student.component";
 import {EditStudentComponent} from "./student/edit-student.component";
 import {RegisterComponent} from "./register/register.component";
+import {LoginDialogComponent} from "./login/login.component";
 /**
  * Created by japnica on 6/23/2017.
  */
@@ -33,6 +34,10 @@ export const testRoute : Routes = [
   {
     path : 'register',
     component: RegisterComponent
+  },
+  {
+    path : 'login',
+    component : LoginDialogComponent
   }
 ];
 
