@@ -9,4 +9,6 @@ import com.example.server.dto.UserDTO;
 public interface UserService {
 
     User saveUser(UserDTO userDTO);
+
+    void activateUser(String key);
 }

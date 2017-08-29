@@ -34,6 +34,8 @@ public class User {
 
     private Boolean enabled;
 
+    private String activationKey;
+
     public Long getId() {
         return id;
     }
@@ -74,6 +76,14 @@ public class User {
         this.enabled = enabled;
     }
 
+    public String getActivationKey() {
+        return activationKey;
+    }
+
+    public void setActivationKey(String activationKey) {
+        this.activationKey = activationKey;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -82,6 +92,7 @@ public class User {
                 ", password='" + password + '\'' +
                 ", roles=" + roles +
                 ", enabled=" + enabled +
+                ", activationKey='" + activationKey + '\'' +
                 '}';
     }
 }
