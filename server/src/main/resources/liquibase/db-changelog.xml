@@ -27,6 +27,10 @@
             password VARCHAR(255) NOT NULL,
             PRIMARY KEY (id
         );
+
+        INSERT INTO ROLE VALUES ('ROLE_USER');
+        INSERT INTO ROLE VALUES ('ROLE_ADMIN');
+
         </sql>
     </changeSet>
 </databaseChangeLog>

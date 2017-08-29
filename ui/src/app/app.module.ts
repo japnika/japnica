@@ -15,6 +15,8 @@ import {RegisterComponent} from "./register/register.component";
 import {RegisterService} from "./register/register.service";
 import {LoginDialogComponent} from "./login/login.component";
 import {Login} from "./login/login.service";
+import {ActivationComponent} from "./activation/activation.component";
+import {ActivationService} from "./activation/activation.service";
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import {Login} from "./login/login.service";
     StudentDetailComponent,
     EditStudentComponent,
     RegisterComponent,
-    LoginDialogComponent
+    LoginDialogComponent,
+    ActivationComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import {Login} from "./login/login.service";
   providers: [
     StudentService,
     RegisterService,
-    Login
+    Login,
+    ActivationService
   ],
   bootstrap: [AppComponent]
 })

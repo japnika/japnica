@@ -5,14 +5,17 @@ export class Register {
   public id?: number;
   public userName ?: string;
   public password ?: string;
+  public email ?: string;
 
   constructor(
     id ?: number,
     userName ?: string,
-    password ?: string
+    password ?: string,
+    email ?: string
   ){
     this.id = id ? id : null;
     this.userName = userName ? userName : null;
     this.password = password ? password : null;
+    this.email = email ? email : null;
   }
 }

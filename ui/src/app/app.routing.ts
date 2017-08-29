@@ -7,6 +7,7 @@ import {StudentDetailComponent} from "./student/detail-student.component";
 import {EditStudentComponent} from "./student/edit-student.component";
 import {RegisterComponent} from "./register/register.component";
 import {LoginDialogComponent} from "./login/login.component";
+import {ActivationComponent} from "./activation/activation.component";
 /**
  * Created by japnica on 6/23/2017.
  */
@@ -38,6 +39,10 @@ export const testRoute : Routes = [
   {
     path : 'login',
     component : LoginDialogComponent
+  },
+  {
+    path : 'activation',
+    component : ActivationComponent
   }
 ];
 

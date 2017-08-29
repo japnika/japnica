@@ -1,5 +1,7 @@
 package com.example.server.domain;
 
+import org.hibernate.validator.constraints.Email;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
@@ -16,7 +18,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column
+    @Column(unique = true)
     @NotNull
     private String userName;
 
@@ -32,9 +34,15 @@ public class User {
     )
     private Set<Role> roles = new HashSet<>();
 
+    @Column
     private Boolean enabled;
 
+    @Column
     private String activationKey;
+
+    @Column(unique = true)
+    @NotNull
+    private String email;
 
     public Long getId() {
         return id;
@@ -84,6 +92,14 @@ public class User {
         this.activationKey = activationKey;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -93,6 +109,7 @@ public class User {
                 ", roles=" + roles +
                 ", enabled=" + enabled +
                 ", activationKey='" + activationKey + '\'' +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

@@ -46,24 +46,26 @@ public class UserServiceImpl implements UserService {
         roles.add(roleRepository.findOne(AuthoritiesConstants.USER));
 
         user.setRoles(roles);
+        user.setEmail(userDTO.getEmail());
 
         userRepository.save(user);
         String msg = "Thanks <b>"+user.getUserName()+"</b>, for registering.<br/>" +
                 " Please click on the link below for activating your account:<br/> <br/>" +
-                "<a href='http://localhost:9000/api/users?key="+user.getActivationKey()+"'>Click here</a>";
-        mailService.sendMail(msg, "japnika.dangol@gmail.com", "hello");
+                "<a href='http://localhost:4200/activation?key="+user.getActivationKey()+"'>Click here</a>";
+        mailService.sendMail(msg, user.getEmail(), "Account Activation");
 
         return user;
     }
 
     @Override
-    public void activateUser(String key) {
+    public User activateUser(String key) {
         User user = userRepository.findByActivationKey(key);
         if(user == null){
             throw new UserNotFoundException("User not found with activation key :" +key);
         }
         user.setEnabled(true);
-        user.setActivationKey(null);
+//        user.setActivationKey(null);
         userRepository.save(user);
+        return user;
     }
 }

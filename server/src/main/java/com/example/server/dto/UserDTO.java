@@ -15,21 +15,23 @@ public class UserDTO {
     private String password;
     private boolean enabled;
     private Set<String> roles;
+    private String email;
 
     public UserDTO() {
     }
 
-    public UserDTO(Long id, String userName, String password, boolean enabled, Set<String> roles) {
+    public UserDTO(Long id, String userName, String password, boolean enabled, Set<String> roles, String email) {
         this.id = id;
         this.userName = userName;
         this.password = password;
         this.enabled = enabled;
         this.roles = roles;
+        this.email = email;
     }
 
     public UserDTO(User user) {
         this(user.getId(), user.getUserName(), user.getPassword(),
-                user.getEnabled(), user.getRoles().stream().map(Role::getName).collect(Collectors.toSet()));
+                user.getEnabled(), user.getRoles().stream().map(Role::getName).collect(Collectors.toSet()), user.getEmail());
     }
 
     public Long getId() {
@@ -52,6 +54,10 @@ public class UserDTO {
         return roles;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     @Override
     public String toString() {
         return "UserDTO{" +
@@ -60,6 +66,7 @@ public class UserDTO {
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +
                 ", roles=" + roles +
+                ", email='" + email + '\'' +
                 '}';
     }
 }

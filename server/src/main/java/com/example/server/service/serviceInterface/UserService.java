@@ -10,5 +10,5 @@ public interface UserService {
 
     User saveUser(UserDTO userDTO);
 
-    void activateUser(String key);
+    User activateUser(String key);
 }

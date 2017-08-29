@@ -4,6 +4,7 @@
 import {Component} from "@angular/core";
 import {Register} from "./register.model";
 import {RegisterService} from "./register.service";
+import {Router} from "@angular/router";
 @Component({
   selector : 'register',
   templateUrl : './register.component.html'
@@ -15,7 +16,8 @@ export class RegisterComponent {
   success : boolean;
 
   constructor(
-    private registerService : RegisterService
+    private registerService : RegisterService,
+    private router : Router
   ){
     this.register = new Register();
     this.success = false;
@@ -32,5 +34,9 @@ export class RegisterComponent {
           () => console.log("error")
         );
       }
+  }
+
+  login(){
+    this.router.navigate(['login']);
   }
 }
