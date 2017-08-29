@@ -22,4 +22,8 @@ export class LoginDialogComponent {
     console.log("login successful");
     this.router.navigate(['display-student']);
   }
+
+  register(){
+    this.router.navigate(['register']);
+  }
 }

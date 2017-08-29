@@ -5,6 +5,7 @@ import {Component, OnInit} from "@angular/core";
 import {Student} from "./student.model";
 import {StudentService} from "./student.service";
 import {Response} from "@angular/http";
+import {Router} from "@angular/router";
 @Component({
   selector: 'display-student',
   templateUrl: './display-student.component.html'
@@ -13,7 +14,8 @@ export class DisplayStudentComponent implements OnInit{
   students: Student;
 
   constructor(
-    private studentService: StudentService
+    private studentService: StudentService,
+    private router : Router
   ){
 
   }
@@ -43,5 +45,9 @@ export class DisplayStudentComponent implements OnInit{
 
   onSuccessDel(){
     this.studentService.query().subscribe(response => this.onSuccess(response.json()), () => console.log('error'));
+  }
+
+  add(){
+    this.router.navigate(['student']);
   }
 }

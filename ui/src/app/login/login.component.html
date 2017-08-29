@@ -3,7 +3,7 @@
     <h2>Login</h2>
   </div>
   <div class="col-md-offset-3 col-md-6">
-    <form name="form" #form="ngForm" (ngSubmit)="save()">
+    <form name="form" #form="ngForm" (ngSubmit)="save()" ngNativeValidate>
       <div class="form-group">
         <label for="userName">User Name</label>
         <input type="text" class="form-control" id="userName" [(ngModel)]="user.userName" #userName="ngModel" name="userName" required>
@@ -14,5 +14,9 @@
       </div>
       <button type="submit" class="btn btn-primary">Login</button>
     </form>
+    <br/>
+    <br/>
+    <hr>
+    <a (click) = "register()">REGISTER A NEW ACCOUNT</a>
   </div>
 </div>

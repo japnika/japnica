@@ -1,7 +1,16 @@
 <div>
   <h2 class="text-center">Display Student Information</h2>
-
-  <div class="table-responsive" *ngIf="students">
+  <br/>
+  <br/>
+  <div class="text-right">
+    <button class="btn btn-success" (click)="add()">
+      <span class="fa fa-plus"></span>
+      ADD NEW STUDENT
+    </button>
+  </div>
+  <br/>
+  <br/>
+  <div class="table-responsive col-md-10 col-md-offset-1" *ngIf="students">
     <table class="table table-striped">
       <thead>
       <tr>

@@ -3,10 +3,10 @@
     <h1>Student Information</h1>
   </div>
   <div class="col-md-6 col-md-offset-3">
-    <form (ngSubmit)="save()" name="form" #form="ngForm">
+    <form (ngSubmit)="save()" name="form" #form="ngForm" ngNativeValidate>
       <div class="form-group">
         <label for="firstName">First Name</label>
-        <input type="text" class="form-control" id="firstName" [(ngModel)]="student.firstName" #firstName="ngModel" name="firstName">
+        <input type="text" class="form-control" id="firstName" [(ngModel)]="student.firstName" #firstName="ngModel" name="firstName" required>
       </div>
 
       <div class="form-group">
@@ -16,12 +16,12 @@
 
       <div class="form-group">
         <label for="lastName">Last Name</label>
-        <input type="text" class="form-control" id="lastName" [(ngModel)]="student.lastName" #lastName="ngModel" name="lastName">
+        <input type="text" class="form-control" id="lastName" [(ngModel)]="student.lastName" #lastName="ngModel" name="lastName" required>
       </div>
 
       <div class="form-group">
         <label for="age">Age</label>
-        <input type="text" class="form-control" id="age" [(ngModel)]="student.age" #age="ngModel" name="age">
+        <input type="text" class="form-control" id="age" [(ngModel)]="student.age" #age="ngModel" name="age" required>
       </div>
 
       <div class="form-group">
@@ -32,7 +32,7 @@
 
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="text" class="form-control" id="email" [(ngModel)]="student.email" #email="ngModel" name="email">
+        <input type="text" class="form-control" id="email" [(ngModel)]="student.email" #email="ngModel" name="email" required>
       </div>
 
       <div class="form-group">
